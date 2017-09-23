@@ -1,0 +1,28 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "plate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "brand",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "year",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "doors",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170923163848",
+    "entityTableName": "car",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "microserviceName": "car"
+}

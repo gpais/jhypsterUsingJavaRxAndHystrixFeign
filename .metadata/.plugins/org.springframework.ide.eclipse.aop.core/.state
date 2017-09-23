@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="jhipster-registry"/>
+<aop-project name="app"/>
+<aop-project name="uaa"/>
+</aop-reference-model>

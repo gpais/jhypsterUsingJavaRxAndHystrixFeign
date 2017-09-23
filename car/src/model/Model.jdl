@@ -1,0 +1,8 @@
+entity Car {
+	plate String
+	brand String
+	year   String
+	doors String
+}
+microservice * with car
+

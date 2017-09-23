@@ -1,0 +1,45 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myCarLabel" jhiTranslate="gatewayApp.car.home.createOrEditLabel">Create or edit a Car</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!car.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="car.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="gatewayApp.car.plate" for="field_plate">Plate</label>
+            <input type="text" class="form-control" name="plate" id="field_plate"
+                [(ngModel)]="car.plate"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="gatewayApp.car.brand" for="field_brand">Brand</label>
+            <input type="text" class="form-control" name="brand" id="field_brand"
+                [(ngModel)]="car.brand"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="gatewayApp.car.year" for="field_year">Year</label>
+            <input type="text" class="form-control" name="year" id="field_year"
+                [(ngModel)]="car.year"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="gatewayApp.car.doors" for="field_doors">Doors</label>
+            <input type="text" class="form-control" name="doors" id="field_doors"
+                [(ngModel)]="car.doors"  />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>
