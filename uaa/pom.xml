@@ -640,7 +640,7 @@
                 </executions>
                 -->
                 <configuration>
-                    <repository>${project.artifactId}</repository>
+                    <repository>gpaishubid/${project.artifactId}</repository>
                     <tag>latest</tag>
                     <contextDirectory>${project.build.directory}</contextDirectory>
                 </configuration>
