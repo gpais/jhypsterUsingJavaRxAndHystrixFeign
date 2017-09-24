@@ -1,0 +1,43 @@
+version: '2'
+services:
+    lb:
+        # load balancer container
+        scale: 1
+        load_balancer_config:
+          name: lb config
+        health_check:
+          port: 42
+          interval: 2000
+          unhealthy_threshold: 3
+          healthy_threshold: 2
+          response_timeout: 2000
+    app-app:
+        scale: 1
+    app-mysql:
+        scale: 1
+    
+    app2-app:
+        scale: 1
+    app2-mysql:
+        scale: 1
+    
+    car-app:
+        scale: 1
+    car-mysql:
+        scale: 1
+    
+    gateway-app:
+        scale: 1
+    gateway-mysql:
+        scale: 1
+    
+    uaa-app:
+        scale: 1
+    uaa-mysql:
+        scale: 1
+    
+
+    jhipster-registry:
+        scale: 1
+
+

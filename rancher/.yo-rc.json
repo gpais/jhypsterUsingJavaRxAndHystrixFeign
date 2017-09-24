@@ -1,0 +1,19 @@
+{
+  "generator-jhipster": {
+    "appsFolders": [
+      "app",
+      "app2",
+      "car",
+      "gateway",
+      "uaa"
+    ],
+    "directoryPath": "../",
+    "monitoring": "no",
+    "serviceDiscoveryType": "eureka",
+    "adminPassword": "admin",
+    "jwtSecretKey": "f1da282f8e2ee3e8d76eefcfa14e7c54fb587a47",
+    "dockerRepositoryName": "gpaishubid",
+    "dockerPushCommand": "docker push",
+    "enableRancherLoadBalancing": true
+  }
+}
